@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-item{
+    font-family:cursive;   
+}
+body{
+    background-size: cover; 
+    background-position: fixed;  
+}
+#sticky-footer{
+    margin-top: 100px;
+    height: 50px;
+}
+.card{
+    size: 5%;
+}
+.card-img-top{
+    background-size: cover; 
+    background-position: fixed; 
+}
+.container1{
+    background-image: url(../Images/pxfuel\ \(8\).jpg);
+    background-size: cover;
+}
+.about{
+    border: 2px solid black;
+    margin-right: 50px;
+}
+.formlog{
+    background-color:lightskyblue;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Travel & Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="Images/logo.png" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Already have an account? <a href="login.html">LogIn</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- form -->
+    <div class="container1">
+        <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-4">
+            <form class="formlog p-5">
+                <h3 class="text-center text-white">User logIn</h3>
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">Name</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your Name">
+                    </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+                    <label for="error" id="error"></label>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" onclick="return emailvalidation()">
+                    <br>
+                    <span id="StrengthDisp" class="badge displayBadge"></span>
+                    
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputnumber" class="form-label">Phone number</label>
+                    <input type="text" class="form-control" id="phoneNo" placeholder="Enter your Mobile number">
+                    <br>
+                  
+                </div>
+                  <div id="emailHelp" class="form-text text-white">By clicking "Get Started", you agree to the Terms &
+                    Conditions, and Mail Terms of Service and acknowledge receipt of our Privacy Notice.</div>
+                <br>
+                <button id="log_b" type="submit" class="btn btn-primary">Get started</button>
+                <br>
+                <br>
+                <div id="result"></div>
+                <h5 class="text-white">Need an account?</h5>
+                <a href="">Sign Up</a>
+            </form>
+            <script>
+                function validateNumber(input) {
+                  var re = /^(\d{3})[- ]?(\d{3})[- ]?(\d{4})$/
+          
+                  return re.test(input)
+                }
+          
+                function validateForm(event) {
+                  var number = document.getElementById('phoneNo').value
+                  if (!validateNumber(number)) {
+                    alert('Please enter a valid number')
+                    const ele = document.getElementById('result')
+                    ele.innerHTML = 'Validation Failed'
+                    ele.style.color = 'red'
+                  } else {
+                    const ele = document.getElementById('result')
+                    ele.innerHTML = 'Validation Successful'
+                    ele.style.color = 'green'
+                  }
+                  event.preventDefault()
+                }
+          
+                document.getElementById('myform').addEventListener('submit', validateForm)
+              </script>
+        </div>
+    </div>
+
+    <!-- address -->
+    <br>
+    <br>
+    <br>
+    <div class="container b-margin">
+        <div class="col-xs-12 pad-10 text-center">
+            <div class="associates">
+                <a href="#" rel="nofollow" target="_blank"><img src="https://www.keralatourism.org/images/ktdc.jpg"
+                        style="width:58px" alt="KTDC" longdesc="https://www.ktdc.com/" title="KTDC"></a>
+                <a href="#" target="_blank"><img src="https://www.keralatourism.org/images/sargaalaya-logo.png"
+                        style="width:83px" alt="Sargaalaya" longdesc="http://www.sargaalaya.com/"
+                        title="Sargaalaya"></a>
+                <a href="#" rel="nofollow" target="_blank"><img src="https://www.keralatourism.org/images/sihmk.jpg"
+                        style="width:69px" alt="SIHMK" longdesc="http://www.sihmkerala.com/" title="SIHM-K"></a>
+                <a href="#" rel="nofollow" target="_blank"><img
+                        src="https://www.keralatourism.org/images/adventurekeralatourism-logo.jpg" style="width:78px"
+                        alt="Adventure Tourism" title="Adventure Tourism"
+                        longdesc="https://www.adventurekeralatourism.com/"></a>
+                <a href="#" rel="nofollow" target="_blank"><img class="ass0-5" style="width:78px"
+                        src="https://www.keralatourism.org/images/saathi-logo.png" alt="saathi" title="saathi"></a>
+                <a href="#" rel="nofollow" target="_blank"><img class="ass0-5" style="width:78px"
+                        src="https://www.keralatourism.org/images/nidhi-logo.png" alt="nidhi" title="nidhi"></a>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div id="credit" class="fnt-color-light text-center">
+
+                    Kerala Tourism ,Thiruvananthapuram, Kerala, India<br>
+                    Phone: o9 123456789, E-mail:info@keralatourism.com</a>. <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <br>
+    <br>
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+        <p class="text-center">Copyright &copy; All rights reserved Kerala Tourism 2023.</p>
+    </footer>
+</body>
+
+</html>
