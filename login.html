@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
@@ -45,30 +45,32 @@
                 <img class="about h-50 " src="Images/loginimg.jpg" alt="">
             </div>
             <div class="col col-sm-12 col-md-8 col-lg-5 col-xl-4 h-50">
-                <form class="formlog p-5" >
-                    <h3 class="text-center">User logIn</h3>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your Email" >
-                    <label for="error" id="error"></label>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter your password" onclick="return emailvalidation()">
-                        <br>
-                        <span id="StrengthDisp" class="badge displayBadge"></span>
-                        <br>
-                    </div>
-                    <button id="log_b" type="submit" class="btn btn-primary">login</button>
+                 <h3 class="text-center">User logIn</h3>
+                 <br>
+                 <br>
+                 <form class="login-form">
+                    <form action="#" onsubmit="return validate()">
+                    <input type="text" placeholder="Email" id="email"/>
+                    <br>
+                    <br>
+                    <input type="password" placeholder="Enter your password" id="password"/>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="lbtn">login</button>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="message">Not registered? <a href="signup.html">Create an account</a></p>
+                    <br>
+                    
                 </form>
             </div>
         </div>
     </div>
 
     <!-- address -->
-    <br>
-    <br>
-    <br>
+    
     <div class="container b-margin">
         <div class="col-xs-12 pad-10 text-center">
 
@@ -107,7 +109,7 @@
     <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
         <p class="text-center">Copyright &copy; All rights reserved Kerala Tourism 2023.</p>
     </footer>
-<script src="form.js"></script>
+<script src="login.js"></script>
 </body>
 
 </html>

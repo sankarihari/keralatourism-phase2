@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.login-form{
+    text-align: center;
+}
+
+.col{
+    border: 2px solid;
+    background-color: cornsilk;
+    margin-top: 100px;
+    height: 50px;
+}
+.lbtn{
+    text-transform: uppercase;
+    width: 30%;
+    background-color: darkseagreen;
+    cursor: pointer;
+
+}
